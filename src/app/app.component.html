@@ -1,9 +1,8 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div>
   <app-header (navToggled)="resizeNav($event)"></app-header>
-  <app-sidebar [style.width]="opened ? '250px' : null"></app-sidebar>
+  <app-sidebar [style.width]="opened ? '250px' : null" [opened]="opened"></app-sidebar>
   <div id="main" [style.marginLeft]="opened ? '250px' : null">
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   </div>
-  <app-footer></app-footer>
 </div>

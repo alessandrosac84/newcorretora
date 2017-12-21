@@ -1,3 +1,20 @@
-<nav>
-
-</nav>
+<div [ngClass]="{'active': !opened}">
+    <nav>
+        <ul class="list-unstyled">
+            <li class="text-center">
+                <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
+                    <p>
+                        <i class="fa fa-home"></i>Home
+                    </p>
+                </a>
+            </li>
+            <li class="text-center">
+                <a routerLink="/cliente-filtro" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
+                    <p>
+                        <i class="fa fa-user"></i>Clientes
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
