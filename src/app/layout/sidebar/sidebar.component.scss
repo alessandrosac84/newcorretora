@@ -1,0 +1,27 @@
+:host {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    background-color: #FFFFFF;
+    box-shadow: 1px 0px 5px #000;
+    transition: 0.4s;
+    padding-top: 70px;
+  }
+  
+  nav {
+    padding: 30px 10px 10px 20px;
+    a,
+    a:link,
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+    i {
+      margin-right: 10px;
+    }
+    li {
+      padding: 5px;
+    }
+  }
+  
