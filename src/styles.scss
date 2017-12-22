@@ -3,6 +3,10 @@
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
+// partials
+@import 'assets/scss/partials/variables';
+@import '../node_modules/font-awesome/scss/font-awesome'; 
+
 body {
     background:#2E9CE6;
     font-family: 'Raleway', 'Arial';
@@ -14,13 +18,10 @@ ul {
     padding:0;
 }
 ul li {
-    display:inline;
+    display:inline-block;
     margin-right: 30px;
 }
-ul li a {
-    font-size: 1.5em;
-}
 a {
-    color:#fff;
+    color:#fff; 
     text-decoration:none;
 }

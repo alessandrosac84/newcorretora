@@ -12,6 +12,7 @@ export class SidebarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.opened = false;
   }
 
 }

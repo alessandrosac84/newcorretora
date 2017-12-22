@@ -1,17 +1,17 @@
 :host {
   box-shadow: 1px 0px 5px #000;
   height: 100%;
-  width: 50px;
+  width: 45px;
   position: absolute;
   left: 0;
   background-color: #333;
   overflow-x: hidden;
   transition: 0.4s;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 nav {
-  padding: 30px 10px 10px 10px;
+  padding: 0px 10px 10px 15px;
   a,
   a:link,
   a:visited {
@@ -26,7 +26,7 @@ nav {
 .active {
   nav {
     i {
-      font-size: 1.8em;
+      font-size: 1em;
       margin-right: 0;
     }
   }

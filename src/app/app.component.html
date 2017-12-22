@@ -1,7 +1,7 @@
 <div class="layout-overflow">
   <app-header (navToggled)="resizeNav($event)"></app-header>
-  <app-sidebar [style.width]="opened ? '250px' : null" [opened]="opened"></app-sidebar>
-  <div id="main" [style.marginLeft]="opened ? '250px' : null">
+  <app-sidebar [style.width]="opened ? '150px' : null" [opened]="opened"></app-sidebar>
+  <div id="main" [style.marginLeft]="opened ? '150px' : null">
     <router-outlet></router-outlet>
     <app-footer></app-footer>
   </div>

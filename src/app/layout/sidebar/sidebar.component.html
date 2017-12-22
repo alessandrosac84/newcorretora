@@ -1,17 +1,37 @@
-<div [ngClass]="{'active': !opened}">
+<div>
     <nav>
         <ul class="list-unstyled">
             <li class="text-center">
-                <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
-                    <p>
-                        <i class="fa fa-home"></i>Home
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
+                    <p *ngIf="opened == true">
+                        <i class="fa fa-home"></i> Home
+                    </p>
+                    <p *ngIf="opened == false">
+                        <i class="fa fa-home"></i>
                     </p>
                 </a>
-            </li>
-            <li class="text-center">
                 <a routerLink="/cliente-filtro" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
-                    <p>
-                        <i class="fa fa-user"></i>Clientes
+                    <p *ngIf="opened == true">
+                        <i class="fa fa-user"></i> Clientes
+                    </p>
+                    <p *ngIf="opened == false">
+                        <i class="fa fa-user"></i>
+                    </p>
+                </a>
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
+                    <p *ngIf="opened == true">
+                        <i class="fa fa-car"></i> Veículos
+                    </p>
+                    <p *ngIf="opened == false">
+                        <i class="fa fa-car"></i>
+                    </p>
+                </a>
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
+                    <p *ngIf="opened == true">
+                        <i class="fa fa-book"></i> Apólices
+                    </p>
+                    <p *ngIf="opened == false">
+                        <i class="fa fa-book"></i>
                     </p>
                 </a>
             </li>
