@@ -34,6 +34,22 @@
                         <i class="fa fa-book"></i>
                     </p>
                 </a>
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
+                    <p *ngIf="opened == true">
+                        <i class="fa fa-money"></i> Finanças
+                    </p>
+                    <p *ngIf="opened == false">
+                        <i class="fa fa-money"></i>
+                    </p>
+                </a>
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" aria-expanded="false">
+                    <p *ngIf="opened == true">
+                        <i class="fa fa-group"></i> Frotas
+                    </p>
+                    <p *ngIf="opened == false">
+                        <i class="fa fa-group"></i>
+                    </p>
+                </a>
             </li>
         </ul>
     </nav>

@@ -3,8 +3,19 @@ import { ClientesFiltroComponent } from './pages/clientes/clientes-filtro/client
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
+
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'login',
+    redirectTo: '/login',
+    pathMatch: 'full'
+  },
   {
     path: 'home',
     component: HomeComponent

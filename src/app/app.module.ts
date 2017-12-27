@@ -9,7 +9,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { ClientesFiltroComponent } from './pages/clientes/clientes-filtro/clientes-filtro.component';
 import { ClientesCadastrarComponent } from './pages/clientes/clientes-cadastrar/clientes-cadastrar.component';
-
+import { LoginComponent } from './pages/login/login.component';
+import { StatComponent } from './pages/shared/componentes/stat/stat.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,8 @@ import { ClientesCadastrarComponent } from './pages/clientes/clientes-cadastrar/
     SidebarComponent,
     ClientesFiltroComponent,
     ClientesCadastrarComponent,
+    LoginComponent,
+    StatComponent,
   ],
   imports: [
     BrowserModule,
