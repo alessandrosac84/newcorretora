@@ -1,3 +1,4 @@
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +12,7 @@ import { ClientesFiltroComponent } from './pages/clientes/clientes-filtro/client
 import { ClientesCadastrarComponent } from './pages/clientes/clientes-cadastrar/clientes-cadastrar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { StatComponent } from './pages/shared/componentes/stat/stat.component';
+import { DropdownComponent } from './pages/shared/componentes/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { StatComponent } from './pages/shared/componentes/stat/stat.component';
     ClientesCadastrarComponent,
     LoginComponent,
     StatComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

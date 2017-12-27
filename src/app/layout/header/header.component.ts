@@ -24,4 +24,8 @@ export class HeaderComponent implements OnInit {
     this.navOpen = !this.navOpen;
     this.navToggled.emit(this.navOpen);
   }
+
+  onLoggedout() {
+    localStorage.removeItem('isLoggedin');
+  }
 }
