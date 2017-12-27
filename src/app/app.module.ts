@@ -13,7 +13,7 @@ import { ClientesCadastrarComponent } from './pages/clientes/clientes-cadastrar/
 import { LoginComponent } from './pages/login/login.component';
 import { StatComponent } from './pages/shared/componentes/stat/stat.component';
 import { DropdownComponent } from './pages/shared/componentes/dropdown/dropdown.component';
-
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +26,7 @@ import { DropdownComponent } from './pages/shared/componentes/dropdown/dropdown.
     LoginComponent,
     StatComponent,
     DropdownComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

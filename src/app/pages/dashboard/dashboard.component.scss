@@ -1,10 +1,10 @@
 .container {
     display: grid;
-    grid-template-columns: 100% auto;
-    padding: 100px;
+    grid-template-columns: 50% auto;
+    max-width: 1700px;
 }
-.col-center {
-    padding: -0.6em 50em;
+.col {
+    padding: .4em 5em;
 }
 .color-dark {
     background: #2885C4;
@@ -19,10 +19,10 @@ input.txt {
     width: 80%;
     margin-bottom: 2em;
 }
-input.btn-login {
+input.btn {
     border: 0;
     display:block;
-    padding:0em 3.7em;
+    padding:1em 3em;
     background:#A5F883;
     color:#003A61;
     margin-bottom:1em;

@@ -1,36 +1,9 @@
-<div class="container color-light">
-    <div class="row" style="margin-right: -800px; margin-left: 70px;">
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'primary'" [icon]="'fa-tasks'" [count]="26" [label]="'Cotações!'" ></app-stat>
-        </div>
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'warning'" [icon]="'fa-gears'" [count]="12" [label]="'Á Renovar'" ></app-stat>
-        </div>
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'success'" [icon]="'fa-child'" [count]="124" [label]="'Novos Clientes'" ></app-stat>
-        </div>
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'danger'" [icon]="'fa-meh-o'" [count]="13" [label]="'Clientes Perdidos'"></app-stat>
-        </div>
+<div class="layout-overflow">
+    <app-header (navToggled)="resizeNav($event)"></app-header>
+    <app-sidebar [style.width]="opened ? '150px' : null" [opened]="opened"></app-sidebar>
+    <div id="main" [style.marginLeft]="opened ? '100px' : null">
+      <app-dashboard></app-dashboard>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
     </div>
-</div>
-<div class="container color-dark">
-  <div class="col">
-    <p>Add a bucket list item</p>
   </div>
-</div>
-<div class="container color-light">
-  <div class="col">
-    <p class="sm">Use this form below to add a new bucket list goal. What do you want to accomplish in your life?</p>
-
-    <form>
-      <input type="text" class="txt" name="item" placeholder="Life goal..">
-      <input type="submit" class="btn" value="Add Item">
-    </form>
-  </div>
-  <div class="col">
-    <p class="life-container">
-      I want to climb a mountain
-    </p>
-  </div>
-</div>

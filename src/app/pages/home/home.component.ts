@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  opened = false;
 
   ngOnInit() {
+
   }
 
+  resizeNav(opened: boolean) {
+    console.log(opened);
+    this.opened = opened;
+  }
 }
