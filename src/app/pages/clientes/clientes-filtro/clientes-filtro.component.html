@@ -3,23 +3,63 @@
   <app-sidebar [style.width]="opened ? '150px' : null" [opened]="opened"></app-sidebar>
   <div id="main" [style.marginLeft]="opened ? '100px' : null">
 
-    <div class="container color-dark">
-      <div class="container" style="padding-top: 20px;">
-        <div class="col-label" style="padding-top: 10px;">
-          <p>Nome</p>
+    <div class="container color-dark" style="padding-top: 20px; padding-left: 10%;">
+      <div style="width: 80%;">
+        <div class="row ">
+          <div class="col-md-6">
+            <h4>Nome</h4>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <h4>CPF</h4>
+            <input type="text" class="form-control">
+          </div>
         </div>
-        <div class="col">
-          <input class="txt" type="text" name="nome">
+
+        <div class="row ">
+          <div class="col-md-6">
+            <div class="row" style="padding-top: 30px; padding-left: inherit;">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio1" value="1">Masculino
+              </label>
+
+              <label class="form-check-label" style="padding-left: 50px;">
+                <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio2" value="2" checked>Feminino
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>Endereço</h4>
+            <input type="text" class="form-control">
+          </div>
         </div>
-        <div class="col-label">
-          <p>CPF</p>
+
+        <div class="row ">
+          <div class="col-md-6 ">
+            <h4>Cidade</h4>
+            <input type="text " class="form-control">
+          </div>
+          <div class="col-md-6 ">
+            <h4>Estado</h4>
+            <select id="estado" class="custom-select col-12">
+                <option>Selecione</option>
+              </select>
+          </div>
         </div>
-        <div class="col">
-          <input class="txt" type="text" name="cpf">
+
+        <div class="row ">
+          <div class="col-md-6 ">
+            <h4>Telefone</h4>
+            <input type="text " class="form-control">
+          </div>
+          <div class="col-md-6 ">
+            <h4>CEP</h4>
+            <input type="text " class="form-control">
+          </div>
         </div>
-        <br>
       </div>
     </div>
+
     <router-outlet></router-outlet>
     <app-footer></app-footer>
   </div>
