@@ -1,4 +1,8 @@
+
 import { Component, OnInit } from '@angular/core';
+import { SidebarComponent } from './../../../layout/sidebar/sidebar.component';
+import { HeaderComponent } from './../../../layout/header/header.component';
+
 
 @Component({
   selector: 'app-clientes-filtro',

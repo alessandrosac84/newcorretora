@@ -1,9 +1,15 @@
 .container {
-    display: grid;
+    display: flex;
     grid-template-columns: 50% auto;
+    max-width: 1700px;
+}
+.col-label {
+    padding: 0.8em 0em;
+    padding-left: 5%;
 }
 .col {
     padding: .4em 5em;
+    padding-left: 2%;
 }
 .color-dark {
     background: #2885C4;
@@ -14,9 +20,9 @@
 
 input.txt {
     border: 0;
-    padding: 1em;
-    width: 80%;
-    margin-bottom: 2em;
+    padding: 0.3em;
+    width: 90%;
+    margin-bottom: 0em;
 }
 input.btn {
     border: 0;
